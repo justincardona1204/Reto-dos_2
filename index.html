@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Proyecto hotelero</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/misFunciones.js"></script>
+
+</head>
+
+<body>
+<h1>tutoria AJAX</h1>
+<div class="menú">
+    <ul>
+        <li>
+            <a href="index.html">inicio</a>
+        </li>
+        <li>
+            <a href="cliente.html">cliente</a>
+        </li>
+        <li>
+            <a href="message.html">mensaje</a>
+        </li>        
+    </ul>        
+</div>
+<fieldset style="width: 30%;">
+<div>
+    <legend>
+        <h2>Reservas</h2>
+    </legend>
+</div>
+<div id="resultadito"></div>
+
+<div id="resultadito"></div>
+<div class="form_field">
+    <label style="color: red;" form="r_id"><b>id:</b></label>
+    <input type="number"  id = "r_id">
+</div>
+<br>
+<div class="form_field">
+    <label style="color: red;" form="room"><b>room:</b> </label> 
+    <input type="text"  id = "room">
+</div>
+<br>
+<div id="resultadito"></div>
+<div class="form_field">
+    <label style="color: red;" form="stars"><b>stars:</b></label>
+    <input type="number"  id = "stars">
+</div>
+<br>
+<div class="form_field">
+    <label style="color: red;" form="category_id"><b>category_id:</b> </label>
+    <input type="number"  id ="category_id">
+</div>
+<br>
+<div class="form_field">
+    <label style="color: red;" form="description"><b>description:</b> </label>
+    <input type="text"  id ="description">
+</div>
+
+
+<br>
+<div id="resultadito"></div> 
+<button onclick="traer()">Consultar</button><br>
+<br>
+<div>
+
+<button onclick="guardar()">Guardar!</button><br>
+<br>
+
+<button onclick="editar()">Actualizar!</button>
+</fieldset>
+</div>
+</body>
+</html>

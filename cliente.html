@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AJAX</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/misFunciones.js"></script>
+
+</head>
+
+<body>
+    <div class="menú">
+        <ul>
+            <li>
+                <a href="index.html">inicio</a>
+            </li>
+            <li>
+                <a href="cliente.html">cliente</a>
+            </li>
+            <li>
+                <a href="message.html">mensaje</a>
+            </li>        
+        </ul>        
+    </div>
+    <fieldset style="width: 30%;">
+    <div>
+        <legend>
+            <h2>Cliente</h2>
+        </legend>
+    </div>
+
+
+    <div id="resultado"></div>
+<div class="form_field">
+    <label style="color: red;" form="id"><b>id:</b></label>
+    <input type="number"  id = "id">
+</div>
+<br>
+<div class="form_field">
+    <label style="color: red;" form="name"><b>nombre:</b> </label> 
+    <input type="text"  id = "name">
+</div>
+<br>
+<div id="resultado"></div>
+<div class="form_field">
+    <label style="color: red;" form="email"><b>email:</b></label>
+    <input type="text"  id = "email">
+</div>
+<br>
+<div class="form_field">
+    <label style="color: red;" form="age"><b>age:</b> </label>
+    <input type="number"  id = "age">
+</div>
+<br>
+<div id="resultado"></div> 
+<button onclick="traerInformacion()">Consultar</button><br>
+<br>
+<button onclick="guardarInformacion()">Guardar!</button><br>
+<br>
+<button onclick="editarInformacion()">Actualizar!</button> <br>
+</fieldset>
+</body>
+</html>
